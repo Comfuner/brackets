@@ -1,0 +1,19 @@
+.inter-open-wrapper {
+  .inter-open-image-strip {
+    position:relative;
+    height: 450px;
+    background-size: cover;
+    background-position: 50% 13%;
+    &:after {
+      content: attr(data-credit);
+      position:absolute;
+      display:inline-block;
+      bottom:-24px;
+      left:12px;
+      font-size:14px;
+      color: gray;
+      z-index:1;
+    }
+  }
+}
+
